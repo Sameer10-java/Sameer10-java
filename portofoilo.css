@@ -1,0 +1,143 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.header {
+  background: linear-gradient(135deg, #007BFF, #00C6FF);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 5px solid #0056b3;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 40px 40px;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: radial-gradient(ellipse at center, #007BFF33 0%, transparent 70%);
+  z-index: 0;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  margin-bottom: 15px;
+  z-index: 1;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.header p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+/* Section Styles */
+section {
+  margin-top: 40px;
+}
+
+.about, .contact {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.about h2,
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.contact a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #e9ecf1;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 60px;
+  border-top: 1px solid #ccc;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .about, .contact {
+    padding: 30px 20px;
+  }
+}
